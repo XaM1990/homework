@@ -47,8 +47,8 @@ body {
 /* ================== Выполнение дз ниже =================== */
 
 span {
-    transition-delay: 1s;
+    transition: .57s 1s; 
 }
 .box__scale {
-    transition-duration: 1s;
+    transition-duration: 1.5s;
 }
