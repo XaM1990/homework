@@ -1,0 +1,27 @@
+body {
+    background: #202020;
+    color: #fff;
+}
+.text {
+    font-size: 250%;
+}
+.rectangle {
+    background: #fff;
+    border-radius: 10px;
+    height: 100px;
+}
+.circle {
+    background: #f53232;
+    border-radius: 100px;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    bottom: 50%;
+    left: 10%;
+}
+.container {
+    position: fixed;
+    right: 50px;
+    bottom: 100px;
+    left: 50%;
+}
