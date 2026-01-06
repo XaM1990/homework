@@ -1,0 +1,32 @@
+body {
+    font-family:'system-ui', sans-serif;
+    margin: 30px 0 0 30px;
+}
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+th,
+td,
+caption {
+    border: 1px solid #000;
+    padding: 1px 6px;
+}
+
+caption {
+    border-bottom: none;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+td {
+    font-weight: 500;
+}
+
+
+
+
+.weekend {
+    color: red;
+}
