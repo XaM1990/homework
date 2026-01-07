@@ -1,0 +1,49 @@
+body {
+    font-family: sans-serif;
+}
+
+.data {
+    max-width: 250px;
+    border-radius: 6px 6px 0 0;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+h2 {
+    margin: 0 0 5px 0;
+    font-size: 16px;
+}
+
+.label .label-text {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+
+input,
+textarea {
+    border-radius: 6px;
+    padding: 6px 8px;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+textarea {
+    resize: vertical;
+    max-height: 200px;
+    min-height: 30px;
+    padding: 4px 19px 4px 8px;
+
+}
+
+.info {
+    max-width: 250px;
+    border-radius: 0 0 6px 6px;
+    border-top: none;
+}
+.button {
+    cursor: pointer;
+    border-style: none;
+    padding: 5px 18px;
+    border-radius: 6px;
+}
