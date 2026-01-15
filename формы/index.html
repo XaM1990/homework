@@ -5,43 +5,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Практика по формам</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <form class="form">
-        <fieldset class="data">
-                <h2>Ваши личные данные</h2>
-            <label class="label">
-                <span class="label-text">Ваше имя</span>
-                <input type="text" placeholder="Ваше имя" name="name" required>
-            </label>
-            <label class="label">
-                <span class="label-text">Ваш возраст</span>
-                <input type="number" placeholder="Возраст" name="age" inputmode="numeric" required>
-            </label>
-            <label class="label">
-                <span class="label-text">Ваш номер телефона</span>
-                <input type="tel" placeholder="Телефон" name="phone" inputmode="tel" required>
-            </label>
-            <label class="label">
-                <span class="label-text">Ваша почта</span>
-                <input type="email" placeholder="Почта" name="mail" inputmode="email" required>
+        <fieldset class="form-group">
+            <legend class="form-group title">Ваши личные данные</legend>
+            <label for="name" class="label">Ваше имя</label>
+                <input
+                id="name"
+                class="input"
+                type="text"
+                placeholder="Ваше имя"
+                name="name"
+                required
+                >
+            <label for="age" class="label">Ваш возраст</label>
+                <input
+                id="age"
+                class="input"
+                type="number"
+                placeholder="Возраст"
+                name="age"
+                required
+                >
+            <label for="phone" class="label">Ваш номер телефона</label>
+                <input
+                id="phone"
+                class="input"
+                type="tel"
+                inputmode="numeric"
+                placeholder="Номер телефона"
+                name="phone"
+                required
+                disabled
+                >
+            <label for="mail" class="label">Ваша почта</label>
+                <input
+                id="mail"
+                class="input"
+                type="email"
+                inputmode="email"
+                placeholder="Почта"
+                name="mail"
+                required
+                >
+        </fieldset>
+        <fieldset class="form-group">
+            <label for="message" class="label">Сообщение</label>
+            <textarea
+            name="message"
+            id="message"
+            class="textarea"
+            placeholder="Ваше сообщение"
+            required
+            ></textarea>
+            <label class="label checkbox-label">
+                <input type="checkbox" class="checkbox" name="checkbox" required>
+                <span class="checkbox-text">Я принимаю правила</span>
             </label>
         </fieldset>
-        <fieldset class="info">
-            <label class="label">
-                <span class="label-text">Сообщение</span>
-                <textarea name="message" placeholder="Ваше сообщение" required></textarea>
-            </label>
-            <div>
-                <label class="label">
-                    <input type="checkbox">
-                    Я принимаю правила
-                </label>
-            </div>
-            <button class="button">Отправить</button>
-        </fieldset>
+        <button class="button">Отправить</button>
     </form>
 </body>
 
