@@ -1,8 +1,14 @@
 .header-inner {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
 	justify-content: space-between;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
-    gap: 15px;
+	gap: 15px;
 	padding-top: 30px;
 	padding-bottom: 30px;
 	border-bottom: 1px solid #d3cbd9;
@@ -11,14 +17,16 @@
 	text-align: right;
 }
 .phone p {
-    margin-bottom: 8px;
+	margin-bottom: 8px;
 }
 .phone a {
 	font-weight: 500;
 	font-size: 18px;
 	color: #2c332f;
-    transition: .2s;
+	-webkit-transition: 0.2s;
+	-o-transition: 0.2s;
+	transition: 0.2s;
 }
 .phone a:hover {
-    color: #3596ed;
+	color: #3596ed;
 }
