@@ -8,7 +8,6 @@
 /* blocks */
 @import "./blocks/header.css";
 @import "./blocks/menu.css";
-
-/* burger */
 @import "./blocks/burger.css";
+@import "./blocks/hero.css";
 
