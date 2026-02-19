@@ -27,6 +27,7 @@ button:focus-visible {
   outline-offset: 2px;
 }
 
+.title-xs,
 .title-md,
 .title-sm {
   font-weight: 600;
@@ -43,6 +44,11 @@ button:focus-visible {
   /* min-width 375px, max-width 768px */
   font-size: clamp(24px, 1.023rem + 2.04vw, 32px)
 }
+
+.title-xs {
+  font-size: 18px;
+}
+
 .text-light,
 .text-regular {
   font-size: 16px;
