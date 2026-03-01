@@ -1,0 +1,251 @@
+<!doctype html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link
+      rel="shortcut icon"
+      href="./icons/logo-favicon-32x32.ico"
+      type="image/x-icon"
+    />
+    <script src="./js/index.js" type="module"></script>
+    <title>SHOP.CO</title>
+  </head>
+  <body class="page__body">
+    <div class="promo-banner" id="promo-banner">
+      <div class="container promo-banner__container">
+        <div class="promo-banner__content">
+          <p class="promo-banner__text">
+            Зарегистрируйтесь и получите скидку 20% на первую покупку.
+          </p>
+          <a class="promo-banner__link" href="#"> Зарегистрироваться сейчас </a>
+        </div>
+        <button class="promo-banner__close">
+          <svg width="20" height="20">
+            <use
+              class="promo-banner__icon-close"
+              href="./icons/cross-sprite.svg#cross"
+            ></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <header class="header">
+      <div class="container header__container">
+        <button
+          class="header__burger burger"
+          aria-label="Открыть меню"
+          aria-expanded="false"
+          aria-controls="header__menu"
+        >
+          <svg width="24" height="24">
+            <use
+              class="burger__icon-menu"
+              href="./icons/header-sprite.svg#burger"
+            ></use>
+            <use
+              class="burger__icon-cross"
+              href="./icons/header-sprite.svg#cross"
+            ></use>
+          </svg>
+        </button>
+        <a class="logo header__logo" href="/"> SHOP.CO </a>
+        <nav
+          class="menu header__menu"
+          id="header__menu"
+          aria-label="Главное меню"
+        >
+          <ul class="menu__list">
+            <li class="menu__item">
+              <details class="menu__dropdown">
+                <summary class="menu__link menu__link-summary">
+                  Магазин
+                  <svg class="menu__link-icon" width="16" height="16">
+                    <use
+                      class="menu__link-icon-1"
+                      href="./icons/header-sprite.svg#arrow-down"
+                    ></use>
+                  </svg>
+                </summary>
+                <ul class="menu__submenu">
+                  <li class="menu__submenu-item">
+                    <a class="menu__submenu-link" href="#">Мужское</a>
+                  </li>
+                  <li class="menu__submenu-item">
+                    <a class="menu__submenu-link" href="#">Женское</a>
+                  </li>
+                </ul>
+              </details>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#best-sellers">Скидки</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#new-arrivals">Новые поступления</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#brands">Бренды</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__search">
+          <div class="header__search-inner">
+            <svg width="24" height="24">
+              <use
+                class="header__search-desctop-icon"
+                href="./icons/header-sprite.svg#search-1"
+              ></use>
+            </svg>
+            <input
+              class="header__search-input"
+              type="search"
+              placeholder="Искать товары..."
+              aria-label="Искать товары"
+            />
+          </div>
+        </div>
+        <div class="header__controls">
+          <div class="header__actions">
+            <button
+              class="header__actions-button header__actions-button-mobile"
+              title="Поиск"
+              aria-label="Поиск"
+            >
+              <svg width="24" height="24">
+                <use
+                  class="header__actions-icon"
+                  href="./icons/header-sprite.svg#search-2"
+                ></use>
+              </svg>
+            </button>
+            <button
+              class="header__actions-button"
+              title="Корзина"
+              aria-label="Корзина"
+            >
+              <svg width="24" height="24">
+                <use
+                  class="header__actions-icon"
+                  href="./icons/header-sprite.svg#cart"
+                ></use>
+              </svg>
+            </button>
+            <button
+              class="header__actions-button"
+              title="Профиль"
+              aria-label="Профиль"
+            >
+              <svg width="24" height="24">
+                <use
+                  class="header__actions-icon"
+                  href="./icons/header-sprite.svg#profile"
+                ></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="hero">
+        <picture>
+          <source srcset="./images/bg-img.webp" type="image/webp" />
+          <img
+            class="hero__bg-img"
+            src="./images/bg-img.jpg"
+            width="1440"
+            height="663"
+            loading="lazy"
+            alt="Фон с изображением девушки и парня в одежде SHOP.CO"
+          />
+        </picture>
+        <div class="container hero__container">
+          <div class="hero__wrapper">
+            <div class="hero__content">
+              <h1 class="hero__content-title">
+                НАЙДИ ОДЕЖДУ КОТОРАЯ ВЫРАЗИТ ТВОЙ СТИЛЬ
+              </h1>
+              <p class="hero__content-text text-lt">
+                Просмотрите наш набор тщательно сделанной одежды, созданный
+                чтобы подчеркнуть ваш индивидуальный стиль.
+              </p>
+              <button class="hero__content-button">Купить сейчас</button>
+            </div>
+            <div class="hero__info">
+              <div class="hero__info-col">
+                <div class="hero__info-col-title">200+</div>
+                <div class="hero__info-col-text text-lt">Всемирных брендов</div>
+              </div>
+              <div class="hero__info-col">
+                <div class="hero__info-col-title">2,000+</div>
+                <div class="hero__info-col-text text-lt">
+                  Качественных товаров
+                </div>
+              </div>
+              <div class="hero__info-col">
+                <div class="hero__info-col-title">30,000+</div>
+                <div class="hero__info-col-text text-lt">
+                  Счастливых клиентов
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero__mobile">
+          <picture>
+            <source srcset="./images/mobile-img.webp" type="image/webp" />
+            <img
+              class="hero__mobile-img"
+              src="./images/mobile-img.png"
+              width="390"
+              height="448"
+              loading="lazy"
+              alt="Фон с изображением девушки и парня в одежде SHOP.CO"
+            />
+          </picture>
+        </div>
+      </section>
+      <section class="brands">
+        <div class="container brands__container">
+          <div class="brands__list">
+            <img
+            width="167"
+            height="34"
+            src="./icons/brands-icon/logo-icon-1.svg"
+            alt="VERSACE"
+          />
+          <img
+            width="91"
+            height="38"
+            src="./icons/brands-icon/logo-icon-2.svg"
+            alt="ZARA"
+          />
+          <img
+            width="156"
+            height="36"
+            src="./icons/brands-icon/logo-icon-3.svg"
+            alt="GUCCI"
+          />
+          <img
+            width="194"
+            height="32"
+            src="./icons/brands-icon/logo-icon-4.svg"
+            alt="PRADA"
+          />
+          <img
+            width="207"
+            height="34"
+            src="./icons/brands-icon/logo-icon-5.svg"
+            alt="Calvin Klein"
+          />
+          </div>
+        </div>
+      </section>
+      <section class="new-arrivals"></section>
+      <section class="best-sellers"></section>
+      <section class="newsletter"></section>
+    </main>
+    <footer class="footer"></footer>
+  </body>
+</html>

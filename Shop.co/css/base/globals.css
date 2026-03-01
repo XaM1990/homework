@@ -1,0 +1,43 @@
+.page {
+  font-family: var(--font-family);
+  font-weight: 400;
+  color: var(--main-color);
+  scroll-behavior: smooth;
+  /* scrollbar-gutter: stable; */
+}
+
+.page__body {
+  min-width: 375px;
+  background-color: var(--bg-primary);
+}
+
+.page__body--no-scroll {
+  position: fixed;
+}
+
+.container {
+  max-width: var(--container-width);
+  padding-inline: var(--container-padding);
+  margin-inline: auto;
+}
+
+.logo {
+  font-family: IntegralCF;
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--text-primary);
+  transform: translateY(-4px);
+}
+
+@media (width <= 768px) {
+  .logo {
+    font-size: 25px;
+  }
+}
+
+.text-lt {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 138%;
+  color: var(--text-secondary);
+}
