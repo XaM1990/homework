@@ -2,39 +2,38 @@
   /* font-family */
   --font-family: "Satoshi", sans-serif;
 
-
   /* Text */
   --text-primary: #000;
   --text-secondary: #00000099;
   --text-muted: #00000066;
   --text-inverse: #fff;
+  --text-red: #ff3333;
 
   /* Backgrounds */
   --bg-primary: #fff;
   --bg-secondary: #f0f0f0;
   --bg-accent-light: #f2f0f1;
   --bg-dark: #000;
+  --bg-red: #ff33331a;
 
   /* shadow */
   --shadow-menu-color: #00000026;
 
-    /* Borders */
+  /* Borders */
   --border-default: #0000001a;
 
   /* hover */
   --color-hover: #0000005e;
-  
-    /* transitions */
+
+  /* transitions */
   --transition-time: 0.2s;
 
-  
   /* border-radius */
   --radius-sm: 20px;
   --radius-md: 40px;
   --radius-lg: 62px;
 
-
-    /* container */
+  /* container */
   --container-width: 1240px;
   --container-padding: 16px;
 }

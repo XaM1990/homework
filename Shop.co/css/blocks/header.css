@@ -7,6 +7,7 @@
   .header {
     padding-block: 12px;
   }
+  
   .header__logo {
     flex-grow: 1;
   }

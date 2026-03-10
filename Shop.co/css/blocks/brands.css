@@ -2,9 +2,6 @@
   background-color: var(--bg-dark);
 }
 
-.brands__container {
-}
-
 .brands__list {
   padding-block: 42px;
   display: flex;

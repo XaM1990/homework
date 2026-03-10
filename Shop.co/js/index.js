@@ -1,4 +1,8 @@
 import BurgerMenu from './burger.js';
+import { testimonialsSlider } from './testimonials-slider.js';
+
+
+testimonialsSlider();
 
   const promoBanner = document.getElementById("promo-banner");
 

@@ -1,0 +1,148 @@
+.footer {
+  position: relative;
+  background-color: var(--bg-secondary);
+}
+
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  padding-top: 136px;
+  border-bottom: 1px solid var(--border-default);
+  padding-bottom: 50px;
+}
+
+@media (width <= 768px) {
+  .footer__top {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 189px;
+    padding-bottom: 40px;
+  }
+  .footer__brand {
+    grid-column: 1 / -1;
+  }
+}
+
+.footer__logo {
+  display: inline-block;
+  margin-bottom: 25px;
+}
+
+.footer__brand-description {
+  max-width: 248px;
+  margin-bottom: 35px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 157%;
+  color: var(--text-secondary);
+}
+
+.footer__social {
+  display: flex;
+  gap: 12px;
+}
+
+.footer__nav {
+  display: contents;
+}
+
+.footer__column {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__column-title {
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--text-primary);
+}
+
+@media (width > 420px) {
+  .footer__column-title {
+    margin-bottom: 26px;
+    font-size: 16px;
+    line-height: 113%;
+    letter-spacing: 0.19em;
+  }
+}
+@media (width <= 420px) {
+  .footer__column-title {
+    margin-bottom: 16px;
+    font-size: 14px;
+    line-height: 129%;
+    letter-spacing: 0.21em;
+  }
+}
+
+.footer__column-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (width > 768px) {
+  .footer__column-list {
+    flex: 1;
+  }
+}
+@media (width <= 768px) {
+  .footer__column-list {
+    height: 112px;
+  }
+}
+
+.footer__column-link {
+  font-weight: 400;
+  color: var(--text-secondary);
+}
+
+@media (width > 420px) {
+  .footer__column-link {
+    font-size: 16px;
+    line-height: 119%;
+  }
+}
+@media (width <= 420px) {
+  .footer__column-link {
+    font-size: 14px;
+    line-height: 114%;
+  }
+}
+
+.footer__bottom {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 25px;
+  padding-top: 20px;
+  padding-bottom: 85px;
+}
+
+@media (width > 768px) {
+  .footer__bottom {
+    justify-content: space-between;
+  }
+}
+@media (width <= 768px) {
+  .footer__bottom {
+    justify-content: center;
+    gap: 25px;
+    padding-top: 16px;
+    padding-bottom: 77px;
+  }
+}
+
+.footer__copyright {
+  font-weight: 400;
+font-size: 14px;
+color: var(--text-secondary);
+}
+
+.footer__payments {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
