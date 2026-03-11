@@ -156,6 +156,8 @@
       -ms-flex-align: center;
           align-items: center;
 }
+.header__actions-button {
+  color: var(--text-primary);
 
 @media (any-hover: hover) {
   .header__actions-button:hover {
@@ -167,4 +169,5 @@
   .header__actions-button-mobile {
     display: none;
   }
+
 }
