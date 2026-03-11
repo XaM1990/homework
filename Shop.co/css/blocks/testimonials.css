@@ -91,6 +91,24 @@
   }
 }
 
+@media (width > 1200px) {
+  .testimonials__slider .swiper-slide {
+    -webkit-filter: blur(4px);
+            filter: blur(4px);
+    -webkit-transition: var(--transition-time);
+    -o-transition: var(--transition-time);
+    transition: var(--transition-time);
+  }
+
+  .testimonials__slider .swiper-slide-prev,
+  .testimonials__slider .swiper-slide-active,
+  .testimonials__slider .swiper-slide-next {
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+} 
+
 .testimonials__slide {
   border: 1px solid var(--border-default);
   border-radius: 20px;
@@ -191,17 +209,3 @@
     line-height: 143%;
   }
 }
-
-/* @media (width > 1200px) {
-  .testimonials__slider .swiper-slide {
-    filter: blur(4px);
-    transition: var(--transition-time);
-  }
-
-  .testimonials__slider .swiper-slide-prev,
-  .testimonials__slider .swiper-slide-active,
-  .testimonials__slider .swiper-slide-next {
-    filter: blur(0);
-    opacity: 1;
-  }
-} */
