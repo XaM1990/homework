@@ -32,6 +32,7 @@
 
 .testimonials__prev,
 .testimonials__next {
+  color: var(--text-primary);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
