@@ -1,7 +1,13 @@
 .testimonials__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   gap: 20px;
 }
 
@@ -18,18 +24,32 @@
 }
 
 .testimonials__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 16px;
 }
 
 .testimonials__prev,
 .testimonials__next {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border: 1px solid transparent;
   border-radius: 50%;
   padding: 5px;
+  -webkit-transition:
+    color var(--transition-time),
+    background var(--transition-time);
+  -o-transition:
+    color var(--transition-time),
+    background var(--transition-time);
   transition:
     color var(--transition-time),
     background var(--transition-time);
@@ -66,6 +86,8 @@
   border-radius: 20px;
   padding: 28px 32px;
   height: 100%;
+  -webkit-transition: var(--transition-time);
+  -o-transition: var(--transition-time);
   transition: var(--transition-time);
 }
 
@@ -82,9 +104,16 @@
 }
 
 .testimonials__client {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 @media (width > 576px) {
@@ -100,6 +129,8 @@
 }
 
 .testimonials__client-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 4px;
 }

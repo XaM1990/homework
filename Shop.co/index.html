@@ -178,7 +178,7 @@
                 Просмотрите наш набор тщательно сделанной одежды, созданный
                 чтобы подчеркнуть ваш индивидуальный стиль.
               </p>
-              <button class="hero__content-button">Купить сейчас</button>
+              <a class="hero__content-button" href="#">Купить сейчас</a>
             </div>
             <div class="hero__info">
               <div class="hero__info-col">
@@ -214,47 +214,62 @@
           </picture>
         </div>
       </section>
-      <section class="brands">
+      <section id="brands" class="brands">
         <div class="container">
-          <div class="brands__list">
-            <img
-              width="167"
-              height="34"
-              src="./icons/brands-icon/logo-icon-1.svg"
-              alt="VERSACE"
-            />
-            <img
-              width="91"
-              height="38"
-              src="./icons/brands-icon/logo-icon-2.svg"
-              alt="ZARA"
-            />
-            <img
-              width="156"
-              height="36"
-              src="./icons/brands-icon/logo-icon-3.svg"
-              alt="GUCCI"
-            />
-            <img
-              width="194"
-              height="32"
-              src="./icons/brands-icon/logo-icon-4.svg"
-              alt="PRADA"
-            />
-            <img
-              width="207"
-              height="34"
-              src="./icons/brands-icon/logo-icon-5.svg"
-              alt="Calvin Klein"
-            />
-          </div>
+          <ul class="brands__list">
+            <li>
+              <img
+                width="167"
+                height="34"
+                loading="lazy"
+                src="./icons/brands-icon/logo-icon-1.svg"
+                alt="VERSACE"
+              />
+            </li>
+            <li>
+              <img
+                width="91"
+                height="38"
+                loading="lazy"
+                src="./icons/brands-icon/logo-icon-2.svg"
+                alt="ZARA"
+              />
+            </li>
+            <li>
+              <img
+                width="156"
+                height="36"
+                loading="lazy"
+                src="./icons/brands-icon/logo-icon-3.svg"
+                alt="GUCCI"
+              />
+            </li>
+            <li>
+              <img
+                width="194"
+                height="32"
+                loading="lazy"
+                src="./icons/brands-icon/logo-icon-4.svg"
+                alt="PRADA"
+              />
+            </li>
+            <li>
+              <img
+                width="207"
+                height="34"
+                loading="lazy"
+                src="./icons/brands-icon/logo-icon-5.svg"
+                alt="Calvin Klein"
+              />
+            </li>
+          </ul>
         </div>
       </section>
-      <section class="new-arrivals">
+      <section id="new-arrivals" class="new-arrivals">
         <div class="container new-arrivals__container">
-          <h2 class="news-arrivals__title title-md">НОВЫЕ ПОСТУПЛЕНИЯ</h2>
-          <div class="news-arrivals__products">
-            <article class="news-arrivals__product">
+          <h2 class="new-arrivals__title title-md">НОВЫЕ ПОСТУПЛЕНИЯ</h2>
+          <div class="new-arrivals__products">
+            <article class="new-arrivals__product">
               <a href="#" class="new-arrivals__product-link">
                 <picture class="new-arrivals__product-img-wrapper">
                   <source
@@ -304,7 +319,7 @@
                 </div>
               </a>
             </article>
-            <article class="news-arrivals__product">
+            <article class="new-arrivals__product">
               <a href="#" class="new-arrivals__product-link">
                 <picture class="new-arrivals__product-img-wrapper">
                   <source
@@ -351,7 +366,7 @@
                 </div>
               </a>
             </article>
-            <article class="news-arrivals__product">
+            <article class="new-arrivals__product">
               <a href="#" class="new-arrivals__product-link">
                 <picture class="new-arrivals__product-img-wrapper">
                   <source
@@ -401,7 +416,7 @@
                 </div>
               </a>
             </article>
-            <article class="news-arrivals__product">
+            <article class="new-arrivals__product">
               <a href="#" class="new-arrivals__product-link">
                 <picture class="new-arrivals__product-img-wrapper">
                   <source
@@ -455,7 +470,7 @@
           <a class="new-arrivals__button" href="#">Посмотреть всё</a>
         </div>
       </section>
-      <section class="best-sellers section">
+      <section id="best-sellers" class="best-sellers section">
         <div class="container best-sellers__container">
           <h2 class="best-sellers__title title-md">ЛИДЕРЫ ПРОДАЖ</h2>
           <div class="best-sellers__products">
@@ -1003,28 +1018,32 @@
             </p>
             <ul class="footer__social">
               <li class="footer__social-item">
-                <a class="footer__social-link" href="#" aria-label="Twitter">
+                <a class="footer__social-link" href="#" aria-label="Twitter"
+                title="Twitter">
                   <svg class="footer__social-icon" width="28" height="28">
                     <use href="./icons/social-media-sprite.svg#twitter"></use>
                   </svg>
                 </a>
               </li>
               <li class="footer__social-item">
-                <a class="footer__social-link" href="#" aria-label="Facebook">
+                <a class="footer__social-link" href="#" aria-label="Facebook"
+                title="Facebook">
                   <svg class="footer__social-icon" width="28" height="28">
                     <use href="./icons/social-media-sprite.svg#facebook"></use>
                   </svg>
                 </a>
               </li>
               <li class="footer__social-item">
-                <a class="footer__social-link" href="#" aria-label="Instagram">
+                <a class="footer__social-link" href="#" aria-label="Instagram"
+                title="Instagram">
                   <svg class="footer__social-icon" width="28" height="28">
                     <use href="./icons/social-media-sprite.svg#instagram"></use>
                   </svg>
                 </a>
               </li>
               <li class="footer__social-item">
-                <a class="footer__social-link" href="#" aria-label="Github">
+                <a class="footer__social-link" href="#" aria-label="Github"
+                title="Github">
                   <svg class="footer__social-icon" width="28" height="28">
                     <use href="./icons/social-media-sprite.svg#github"></use>
                   </svg>

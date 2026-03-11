@@ -19,6 +19,13 @@
   width: min(var(--container-width), 100% - var(--container-padding) * 2);
   margin-inline: auto;
 }
+
+a:focus-visible,
+button:focus-visible,
+input:focus {
+  outline: 1px solid var(--text-primary);
+  outline-offset: 2px;
+}
  
 
 .logo {
@@ -26,7 +33,9 @@
   font-weight: 700;
   font-size: 32px;
   color: var(--text-primary);
-  transform: translateY(-4px);
+  -webkit-transform: translateY(-4px);
+      -ms-transform: translateY(-4px);
+          transform: translateY(-4px);
 }
 
 @media (width <= 768px) {

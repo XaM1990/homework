@@ -4,12 +4,19 @@
 
 .brands__list {
   padding-block: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   /* grid-template-columns: repeat(5, 1fr); */
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   justify-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 22px 106px;
 }
 
