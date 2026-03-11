@@ -70,6 +70,15 @@
   }
 }
 
+.testimonials__swiper-container {
+  width: clamp(390px, 90vw, 1440px);;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
 @media (width > 1199px) {
   .testimonials__slider {
     height: 240px;
