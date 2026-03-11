@@ -12,7 +12,7 @@
 }
 
 .page__body--no-scroll {
-  position: fixed;
+  overflow: hidden;
 }
 
 .container {
@@ -87,4 +87,5 @@ input:focus {
     width: 15px;
     height: 14px;
   }
+
 }
