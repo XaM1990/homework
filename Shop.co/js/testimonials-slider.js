@@ -20,7 +20,7 @@ export const testimonialsSlider = () => {
       },
 
       1200: {
-        slidesPerView: 3,
+        slidesPerView: 3.5,
         centeredSlides: true,
       },
     },
