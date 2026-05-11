@@ -45,25 +45,15 @@ const deleteTodoById = (todos, todoId) => {
 };
 
 const form = document.querySelector(".form");
-
-form.addEventListener("submit", () => {
-  console.log("Отправка");
-});
-
 const input = document.querySelector(".input");
-
-input.addEventListener("input", () => {
-  console.log(input.value);
-});
-
 const todoList = document.querySelector(".todos");
 
-const createTodoElement = (text) => {
+const createTodoElement = (todo) => {
   const li = document.createElement("li");
   li.classList.add("todo");
-
+  li.dataset.id = todo[todoKeys.id];
   li.innerHTML = `
-    <div class="todo-text">${text}</div>
+    <div class="todo-text">${todo[todoKeys.text]}</div>
     <div class="todo-actions">
       <button class="button-complete button">&#10004;</button>
       <button class="button-delete button">&#10006;</button>
@@ -73,12 +63,38 @@ const createTodoElement = (text) => {
 };
 
 const handleCreateTodo = (todos, text) => {
-  createTodo(todos, text);
+  const todo = createTodo(todos, text);
 
-  const todoElement = createTodoElement(text);
+  const todoElement = createTodoElement(todo);
 
-  todoList.append(todoElement);
+  todoList.prepend(todoElement);
 };
+
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  const text = input.value.trim();
+  if (!text) return;
+
+  handleCreateTodo(todos, text);
+  input.value = "";
+});
+
+todoList.addEventListener("click", ({target}) => {
+  const todo = target.closest(".todo");
+  if (!todo) return;
+
+  const todoId = Number(todo.dataset.id);
+
+  if (target.matches(".button-complete")) {
+    completeTodoById(todos, todoId);
+    todo.classList.toggle("completed");
+  }
+  if (target.matches(".button-delete")) {
+    deleteTodoById(todos, todoId);
+    todo.remove();
+  }
+});
 
 // При помощи метода querySelector получаем элементы .form, .input и .todos
 // Создаем функцию createTodoElement(text), которая будет создавать todo в виде разметки
